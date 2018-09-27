@@ -1,0 +1,10 @@
+.container {
+  height: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include large-break-point {
+    padding: 0 20px;
+  }
+}
