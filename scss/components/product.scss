@@ -1,0 +1,21 @@
+.product {
+  &__item {
+    text-align: center;
+  }
+
+  &__stars {
+    color: #f4d06f;
+  }
+
+  &__section {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}
