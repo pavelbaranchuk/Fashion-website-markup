@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fudi</title>
+  <title>Fashion store</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.css">
   <link rel="stylesheet" href="dist/style.css">
@@ -13,37 +13,37 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__phone">
-        <span><i class="fas fa-phone"></i></span>
-        <span>+99 (0) 101 0000 888</span>
-      </div>
-      <div class="header__email">
-        <span><i class="fas fa-envelope"></i></span>
-        <span>info@yourdomain.com</span>
+      <div class="header__contacts">
+        <span class="header__icon"><i class="fa fa-phone"></i></span>
+        <span class="header__info">+99 (0) 101 0000 888</span>
+        <span class="header__icon"><i class="fa fa-envelope"></i></span>
+        <span class="header__info">info@yourdomain.com</span>
       </div>
     </div>
-    <hr class="header__line ">
+    <hr class="header__line">
     <div class="container">
-      <div class="wraper">
+      <div class="header__wraper">
         <a href="/" class="header__logo">
           <p class="header__title">FASHION SHOP</p>
           <p class="header__subtitle">BOUTIQUE</p>
         </a>
 
-        <nav>
+        <nav class="header__menu">
           <ul>
-            <li><a class="header__menu" href="">HOME</a></li>
-            <li><a href="">SHOP</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="">CONTACT US</a></li>
+            <li class="header__menu-item"><a class="header__link" href="">HOME</a></li>
+            <li class="header__menu-item"><a class="header__link" href="">SHOP</a></li>
+            <li class="header__menu-item"><a class="header__link" href="">BLOG</a></li>
+            <li class="header__menu-item"><a class="header__link" href="">ABOUT
+                US</a></li>
+            <li class="header__menu-item"><a class="header__link" href="">CONTACT
+                US</a></li>
           </ul>
         </nav>
 
         <ul class="header__social">
-          <li><a href=""><i class="fas fa-user"></i></a></li>
-          <li><a href=""><i class="fas fa-search"></i></a></li>
-          <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+          <li class="header__social-item"><a href=""><i class="fa fa-user header__link"></i></a></li>
+          <li class="header__social-item"><a href=""><i class="fa fa-search header__link"></i></a></li>
+          <li class="header__social-item"><a href=""><i class="fa fa-shopping-bag header__link"></i></a></li>
         </ul>
 
       </div>
@@ -51,28 +51,225 @@
   </header>
 
   <div class="main">
-    <section class="slider ">
-
+    <section class="slider">
+      <h3 class="slider__title">Sale</h3>
+      <p class="slider__details">Up to 50% Off</p>
     </section>
-    <section class="sale ">
-      <div class="container">
 
+    <section class="sale">
+      <div class="container sale__wraper">
+        <h3 class="sale__title">Sale Products</h3>
+        <div class="sale__products-item">
+          <img class="sale__image" src="assets/img/sale-1.png" alt="sale_image">
+          <div class="sale__stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Embroidered Linen Shirt</p>
+          <p>$30.50</p>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class="sale__products-item">
+          <img class="sale__image" src="assets/img/sale-2.png" alt="sale_image">
+          <div class="sale__stars">
+            <i class="fa fa-star sale__star-1 sale__star_active"></i>
+            <i class="fa fa-star sale__star-2 sale__star_active"></i>
+            <i class="fa fa-star sale__star-3 sale__star_active"></i>
+            <i class="fa fa-star sale__star-4 sale__star_active"></i>
+            <i class="fa fa-star sale__star-5 sale__star_active"></i>
+          </div>
+          <p>Embroidered Linen Shirt</p>
+          <p>$30.50</p>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class="sale__products-item">
+          <img class="sale__image" src="assets/img/sale-3.png" alt="sale_image">
+          <div class="sale__stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Embroidered Linen Shirt</p>
+          <p>$30.50</p>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class="sale__products-item">
+          <img class="sale__image" src="assets/img/sale-4.png" alt="sale_image">
+          <div class="sale__stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Embroidered Linen Shirt</p>
+          <p>$30.50</p>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class="sale__banner-1">
+          <p>sale up to</p>
+          <p>Kemeks</p>
+          <p>BE COOL</p>
+          <a href="/">details more</a>
+        </div>
+
+        <div class="sale__banner-2">
+          <p>40%</p>
+          <p>OFF EVERYTHING</p>
+          <a href="/">shop now</a>
+        </div>
       </div>
     </section>
-    <section class="deal ">
 
-    </section>
-
-    <section class="featured ">
-      <div class="container">
-
+    <section class="deal">
+      <div deal__wraper>
+        <div class="deal__info">
+          <p>SALE</p>
+          <h3>Deal of the Day probel 30% on Dresses</h3>
+          <p>Pretty Thing Floral Skater Dress</p>
+          <p>$28.00</p>
+          <div class="deal__counter">use script to include counrter and format
+            it</div>
+          <button>ADD TO CART</button>
+        </div>
+        <img src="assets/img/deal.png" alt="deal-image">
       </div>
     </section>
 
-    <section class="fashionshop ">
+    <section class="featured">
+      <div class="container">
+        <h3>Featured Products</h3>
+        <div class="featured__products">
+
+          <div class="featured__products-item">
+            <img class="featured__image" src="assets/img/featured-1.png" alt="featured_image">
+            <div class="sale__stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="featured__text">Embroidered Linen Shirt</p>
+            <p class="featured__price">$30.50</p>
+            <button class="featured__button">ADD TO CART</button>
+          </div>
+
+          <div class="featured__products-item">
+            <img class="featured__image" src="assets/img/featured-2.png" alt="featured_image">
+            <div class="sale__stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="featured__text">Embroidered Linen Shirt</p>
+            <p class="featured__price">$30.50</p>
+            <button class="featured__button">ADD TO CART</button>
+          </div>
+
+          <div class="featured__products-item">
+            <img class="featured__image" src="assets/img/featured-3.png" alt="featured_image">
+            <div class="sale__stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="featured__text">Embroidered Linen Shirt</p>
+            <p class="featured__price">$30.50</p>
+            <button class="featured__button">ADD TO CART</button>
+          </div>
+
+          <div class="featured__products-item">
+            <img class="featured__image" src="assets/img/featured-4.png" alt="featured_image">
+            <div class="sale__stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="featured__text">Embroidered Linen Shirt</p>
+            <p class="featured__price">$30.50</p>
+            <button class="featured__button">ADD TO CART</button>
+          </div>
+
+          <div class="featured__products-item">
+            <img class="featured__image" src="assets/img/featured-5.png" alt="featured_image">
+            <div class="sale__stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="featured__text">Embroidered Linen Shirt</p>
+            <p class="featured__price">$30.50</p>
+            <button class="featured__button">ADD TO CART</button>
+          </div>
+
+          <div class="featured__products-item">
+            <img class="featured__image" src="assets/img/featured-6.png" alt="featured_image">
+            <div class="sale__stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="featured__text">Embroidered Linen Shirt</p>
+            <p class="featured__price">$30.50</p>
+            <button class="featured__button">ADD TO CART</button>
+          </div>
+
+          <div class="featured__products-item">
+            <img class="featured__image" src="assets/img/featured-7.png" alt="featured_image">
+            <div class="sale__stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="featured__text">Embroidered Linen Shirt</p>
+            <p class="featured__price">$30.50</p>
+            <button class="featured__button">ADD TO CART</button>
+          </div>
+
+          <div class="featured__products-item">
+            <img class="featured__image" src="assets/img/featured-8.png" alt="featured_image">
+            <div class="sale__stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="featured__text">Embroidered Linen Shirt</p>
+            <p class="featured__price">$30.50</p>
+            <button class="featured__button">ADD TO CART</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="fashionshop">
 
     </section>
-    <section class="subscribe ">
+    <section class="subscribe">
       <div class="container">
 
       </div>
@@ -80,8 +277,7 @@
 
   </div>
 
-
-  <footer class="footer ">
+  <footer class="footer">
     <div class="container">
       <div class="footer__wraper">
         <div class="footer__main">
@@ -89,9 +285,9 @@
             <p class="header__title">FASHION SHOP</p>
             <p class="header__subtitle">BOUTIQUE</p>
           </a>
-          <img class="footer__image " src="assets/img/mastercard.png " alt="benefits-image ">
-          <img class="footer__image " src="assets/img/paypal.png " alt="benefits-image ">
-          <img class="footer__image " src="assets/img/visa.png " alt="benefits-image ">
+          <img class="footer__image" src="assets/img/mastercard.png" alt="mastercard">
+          <img class="paypal" src="assets/img/paypal.png" alt="benefits-image">
+          <img class="visa" src="assets/img/visa.png" alt="benefits-image">
         </div>
 
         <div class="footer__service">
@@ -119,11 +315,12 @@
               <span>Patricia C. Amedee 4401</span>
             </li>
             <li>
-              <span><i class="fal fa-phone"></i></span>
+              <span><i class="fa fa-phone"></i></span>
               <span>+99 (0) 101 0000 888</span>
             </li>
             <li>
               <span><i class="fal fa-envelope-open-text"></i></span>
+              <!-- fal fa-envelope-open-text -->
               <span>info@yourdomain.com</span>
             </li>
           </ul>

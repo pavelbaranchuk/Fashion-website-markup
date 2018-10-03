@@ -1,7 +1,69 @@
 .header {
   &__menu {
+    display: flex;
+    font-family: $heading-font;
+    font-size: 15px;
+    letter-spacing: 3px;
+
+    &-item {
+      padding-right: 20px;
+      list-style: none;
+      display: inline-block;
+    }
+  }
+  &__contacts {
+    vertical-align: center;
+    margin: 20px 0 20px 0;
+  }
+
+  &__icon {
+    padding-right: 10px;
+  }
+
+  &__info {
+    padding-right: 40px;
+    opacity: 0.5;
+    font-size: 13px;
+  }
+
+  &__line {
+    border-color: #ecebeb47;
     margin: 0;
-    padding: 0;
-    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__logo {
+    text-decoration: none;
+    line-height: 0;
+    color: black;
+    font-family: $heading-font;
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+
+  &__subtitle {
+    font-size: 10px;
+  }
+
+  &__wraper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    font-weight: bold;
+  }
+
+  &__social {
+    &-item {
+      padding-right: 20px;
+      color: black;
+      list-style: none;
+      display: inline-block;
+    }
   }
 }

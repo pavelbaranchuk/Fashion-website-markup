@@ -1,0 +1,17 @@
+.slider {
+  background: url("../assets/img/main.png") center/cover no-repeat;
+  color: $dark;
+  font-family: $bold-font;
+  padding: 100px 100px;
+  &__title {
+    margin: 0;
+    font-size: 250px;
+    line-height: 120px;
+  }
+
+  &__details {
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 10px;
+  }
+}
