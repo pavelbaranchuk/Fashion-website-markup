@@ -10,7 +10,7 @@ $bold-font: Poppins-SemiBold, $basic-font;
 $medium-font: Poppins-Medium, $basic-font;
 
 @mixin extra-large-break-point {
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 900px) {
     @content;
   }
 }

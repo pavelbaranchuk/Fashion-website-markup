@@ -3,13 +3,11 @@
 
   &__wraper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px;
   }
 
   &__section {
-    min-width: 230px;
     padding-top: 30px;
   }
 
@@ -47,6 +45,11 @@
     font-family: $basic-font;
     font-size: 14px;
     opacity: 0.4;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
   }
 
   @include extra-large-break-point {
