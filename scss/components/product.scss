@@ -5,6 +5,7 @@
 
   &__stars {
     color: #f4d06f;
+    padding-top: 10px;
   }
 
   &__section {
@@ -12,6 +13,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
+    grid-row-gap: 30px;
   }
 
   &__image {
@@ -37,8 +39,9 @@
     background-color: black;
     color: white;
     font-family: $medium-font;
+    border: none;
     &:hover {
-      background-color: darken(gray, 20%);
+      background-color: lighten($main-color, 10%);
     }
   }
 }

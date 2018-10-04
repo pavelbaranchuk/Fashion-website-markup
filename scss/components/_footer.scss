@@ -1,0 +1,57 @@
+.footer {
+  max-width: 850px;
+
+  &__wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  &__section {
+    min-width: 230px;
+    padding-top: 30px;
+  }
+
+  &__item {
+    list-style: none;
+    opacity: 0.4;
+    font-family: $basic-font;
+  }
+
+  &__title {
+    font-family: $heading-font;
+    line-height: 0;
+  }
+
+  &__icon {
+    width: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      text-decoration: underline;
+      color: darken(white, 50%);
+    }
+  }
+
+  &__image {
+    padding: 30px 5px 0 0;
+    vertical-align: top;
+  }
+
+  &__copyright {
+    padding: 30px 0 30px 0;
+    font-family: $basic-font;
+    font-size: 14px;
+    opacity: 0.4;
+  }
+
+  @include extra-large-break-point {
+    &__contact {
+      display: none;
+    }
+  }
+}

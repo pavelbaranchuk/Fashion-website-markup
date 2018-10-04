@@ -10,11 +10,14 @@
     padding-right: 20px;
     list-style: none;
     display: inline-block;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__contacts {
     vertical-align: center;
-    margin: 20px 0 20px 0;
+    padding: 20px 0 20px 0;
   }
 
   &__icon {
@@ -35,6 +38,9 @@
   &__link {
     text-decoration: none;
     color: black;
+    &:hover {
+      color: lighten($main-color, 10%);
+    }
   }
 
   &__logo {
@@ -42,6 +48,9 @@
     line-height: 0;
     color: black;
     font-family: $heading-font;
+    &:hover {
+      color: lighten($main-color, 10%);
+    }
   }
 
   &__title {
@@ -57,5 +66,13 @@
     justify-content: space-between;
     padding: 15px 0 15px 0;
     font-weight: bold;
+  }
+
+  @include extra-large-break-point {
+    &__item {
+      padding-right: 5px;
+      font-size: 13px;
+      letter-spacing: 0;
+    }
   }
 }

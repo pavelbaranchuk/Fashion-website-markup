@@ -36,6 +36,9 @@
     letter-spacing: 1px;
     font-family: $heading-font;
     width: 100px;
-    // line-height: 15px;
+    border: none;
+    &:hover {
+      background: lighten($main-color, 20%);
+    }
   }
 }

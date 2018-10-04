@@ -1,6 +1,5 @@
 .slider {
   background: url("../assets/img/main.png") top/cover no-repeat;
-  color: $dark;
   font-family: $bold-font;
   line-height: 110px;
   opacity: 0.9;
@@ -40,8 +39,5 @@
       width: 14px;
       height: 14px;
     }
-  }
-
-  &__link {
   }
 }
