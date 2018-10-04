@@ -18,4 +18,27 @@
     width: 100%;
     height: auto;
   }
+
+  &__text {
+    font-family: $basic-font;
+    font-size: 15px;
+    margin: 5px 0 5px 0;
+  }
+
+  &__price {
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+  }
+
+  &__button {
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-family: $medium-font;
+    &:hover {
+      background-color: darken(gray, 20%);
+    }
+  }
 }

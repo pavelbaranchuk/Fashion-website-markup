@@ -13,9 +13,65 @@
 
   &__title {
     grid-area: title;
+    margin: 40px 0 -5px 0;
+    border-bottom: 2px solid black;
+    width: 125px;
   }
 
   &__banners {
-    grid-area: banners;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-column-gap: 20px;
+    margin-top: 60px;
+  }
+
+  &__upto {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    font-family: $heading-font;
+  }
+
+  &__uptobg {
+    margin-top: 40px;
+    display: inline-block;
+    width: 90px;
+    padding: 5px 10px 5px 10px;
+    background-color: #feecec;
+  }
+
+  &__brand {
+    color: white;
+    font-size: 80px;
+    margin: 60px 0 40px 0;
+    font-family: $heading-font;
+    line-height: 0;
+  }
+
+  &__margin {
+    margin-top: 110px;
+  }
+
+  &__motto {
+    color: white;
+    letter-spacing: 5px;
+    font-family: $basic-font;
+  }
+
+  &__link {
+    font-family: $heading-font;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  &__first {
+    background-color: $banner-left-color;
+    min-height: 280px;
+    vertical-align: center;
+  }
+
+  &__second {
+    background: url("../assets/img/rectangle.png") top/cover no-repeat;
   }
 }

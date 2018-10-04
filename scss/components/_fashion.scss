@@ -1,0 +1,78 @@
+.fashion {
+  text-align: center;
+
+  &__banner {
+    background: url("../assets/img/fashion-shop.png") top/cover no-repeat;
+    min-height: 150px;
+    margin: 50px 0 70px 0;
+  }
+
+  &__sign {
+    color: #eaac00;
+  }
+
+  &__shoptitle {
+    font-family: $heading-font;
+    font-size: 27px;
+    margin-bottom: -10px;
+  }
+
+  &__photos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 5px;
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: auto;
+    margin: 60px 0 50px 0;
+  }
+
+  &__icon {
+    width: auto;
+    height: 40px;
+  }
+
+  &__guarantee {
+    font-family: $heading-font;
+    font-size: 12px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__shopdescription {
+    font-family: $basic-font;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-family: $heading-font;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 40px 0 0 0;
+  }
+
+  &__description {
+    font-family: $basic-font;
+    font-weight: bold;
+    font-size: 9px;
+    letter-spacing: 4px;
+    margin-top: -15px;
+  }
+
+  &__motto {
+    font-family: $heading-font;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 5px 10px 5px 10px;
+    background: yellow;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+}

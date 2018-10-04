@@ -1,0 +1,22 @@
+.deal {
+  &__wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  &__left {
+    flex: 1;
+    background-color: $banner-gray;
+  }
+
+  &__right {
+    flex: 1;
+    background: url("../assets/img/deal.png") top/cover no-repeat;
+  }
+
+  &__info {
+    padding-left: 30%;
+  }
+}
