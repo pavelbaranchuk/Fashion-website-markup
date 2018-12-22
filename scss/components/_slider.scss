@@ -1,0 +1,43 @@
+.slider {
+  background: url("../assets/img/main.png") top/cover no-repeat;
+  font-family: $bold-font;
+  line-height: 110px;
+  opacity: 0.9;
+  &__title {
+    margin: 0;
+    font-size: 160px;
+  }
+
+  &__text {
+    padding: 180px 0 0 20%;
+  }
+
+  &__details {
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  &__switcher {
+    text-align: center;
+    padding: 100px 0 0 0;
+  }
+
+  &__dot {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 3px;
+    &_active {
+      background-color: white;
+    }
+    &:hover {
+      background-color: darken(white, 10%);
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

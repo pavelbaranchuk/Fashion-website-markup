@@ -1,0 +1,86 @@
+.deal {
+  &__wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  &__left {
+    flex: 1;
+    background-color: #eeeeee;
+  }
+
+  &__right {
+    flex: 1;
+    background: url("../assets/img/deal.png") top/cover no-repeat;
+  }
+
+  &__info {
+    padding-left: 30%;
+    padding-right: 20px;
+  }
+
+  &__description {
+    font-family: $bold-font;
+    font-size: 30px;
+  }
+
+  &__button {
+    margin: 25px 0 50px 0;
+    padding: 10px 10px 10px 10px;
+    background: $main-color;
+    font-size: 9px;
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    font-family: $basic-font;
+    width: 100px;
+    &:hover {
+      background: lighten($main-color, 20%);
+    }
+  }
+
+  &__item {
+    border: 1px solid white;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__subject {
+    font-family: $basic-font;
+    margin: 0 0 -20px 0;
+  }
+
+  &__price {
+    font-family: $heading-font;
+    font-size: 25px;
+  }
+
+  &__counter {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: $heading-font;
+  }
+
+  &__number {
+    font-size: 30px;
+  }
+
+  &__hint {
+    font-size: 10px;
+  }
+
+  &__title {
+    padding: 8px 10px 8px 15px;
+    background: #c8c290;
+    display: inline-block;
+    color: white;
+    font-family: $heading-font;
+    letter-spacing: 8px;
+    font-size: 20px;
+    margin: 70px 0 -10px 0;
+  }
+}

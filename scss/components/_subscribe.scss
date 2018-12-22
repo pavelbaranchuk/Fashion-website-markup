@@ -1,0 +1,44 @@
+.subscribe {
+  background: #f4f4f4;
+  text-align: center;
+  padding-bottom: 60px;
+
+  &__title {
+    font-family: $heading-font;
+    font-size: 35px;
+    padding-top: 60px;
+  }
+
+  &__description {
+    font-family: $basic-font;
+    font-size: 13px;
+    font-weight: bold;
+    margin: -30px 0 25px 0;
+  }
+
+  &__wraper {
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  &__field {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #000000;
+    font-size: 15px;
+    font-family: $basic-font;
+    width: 250px;
+  }
+
+  &__button {
+    margin-left: 5px;
+    background: $main-color;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: $heading-font;
+    width: 100px;
+    border: none;
+    &:hover {
+      background: lighten($main-color, 20%);
+    }
+  }
+}

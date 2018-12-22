@@ -1,0 +1,40 @@
+{
+  "name": "task-04",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "9.1.5",
+    "browser-sync": "2.24.7",
+    "gulp": "3.9.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.1",
+    "husky": "^1.0.0-rc.15",
+    "js-beautify": "^1.8.6",
+    "lint-staged": "^7.3.0",
+    "node-sass": "4.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.html": [
+      "js-beautify -r",
+      "git  add"
+    ]
+  }
+}

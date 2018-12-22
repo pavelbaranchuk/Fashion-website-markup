@@ -1,0 +1,8 @@
+.featured {
+  &__title {
+    grid-area: title;
+    margin: 80px 0 20px 0;
+    border-bottom: 2px solid black;
+    width: 168px;
+  }
+}
